@@ -2,6 +2,8 @@
 
 <h1>掲示板（仮）</h1>
 
+<CENTER>
+
 <table>
   <thead>
     <tr>
@@ -18,14 +20,17 @@
         <td><%= bb.date %></td>
         <td><%= bb.title %></td>
         <td><%= bb.body %></td>
-        <td><%= link_to 'Show', bb %></td>
-        <td><%= link_to 'Edit', edit_bb_path(bb) %></td>
-        <td><%= link_to 'Destroy', bb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', bb %></td>
+        <td><%= link_to '編集', edit_bb_path(bb) %></td>
+        <td><%= link_to '削除', bb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+
+</CENTER>
 <br>
 
-<%= link_to 'New Bb', new_bb_path %>
+<%= link_to '新規投稿', new_bb_path %>
+<%= link_to 'TOP', root_path %>
