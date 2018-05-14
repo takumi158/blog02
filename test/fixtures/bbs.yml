@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-05-14
+  title: MyString
+  body: MyText
+
+two:
+  date: 2018-05-14
+  title: MyString
+  body: MyText
